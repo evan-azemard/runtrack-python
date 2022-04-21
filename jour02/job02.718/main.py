@@ -6,6 +6,9 @@ class Personne():
 
 class Client(Personne):
     def __init__(self, nom, prenom):
+        self.nom = nom
+        self.prenom = prenom
+
 
 class Auteur(Personne):
     def __init__(self, nom, prenom):
@@ -18,11 +21,13 @@ class Auteur(Personne):
         livre = Livre(titre, self)
         self.oeuvre.append(livre.titre)
 
+
 class Livre():
 
     def __init__(self, titre, auteur):
         self.titre = titre
         self.auteur = auteur
+
 
 class Bibliotheque():
     def __init__(self, nom):
