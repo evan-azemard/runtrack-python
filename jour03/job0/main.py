@@ -1,5 +1,3 @@
-import math
-
 print("rentrer un nombre entier")
 
 n = input()
